@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="login">
+		<div id="title">
+			<p class="titleTxt">Login Form</p>
+			<button class="closes titleTxt">✖</button>
+		</div>
+		<form>
+			<br><br>
+
+			<div class="inner-addon right-addon">
+				<p class= "icon">📧</p>
+				<input class="input form-control" type="email" id="email" placeholder="Email" required>
+			</div>
+
+			<br><br>
+			
+			<div class="inner-addon right-addon">
+				<p class="icon">🔒</p>
+				<input class="input form-control" type="password" id="password" placeholder="Password" required>
+			</div>
+		</form>
+
+			<p id="message"></p>
+			<button class="inline" id="signIn" onclick="displayModal()" >Sign In</button>
+			<p id="lost" class="inline">Lost Your Password?</p>
+	</div>
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  	<div class="modal-content">
+  	  <p>Would You Like To Create A New Account?</p>
+  	  <button class="inline" onclick="sendUserData(true)" >Yes</button>
+  	  <button class="inline" onclick="sendUserData(false)" >No</button>
+  	</div>
+
+</div>
+
+<script type="text/javascript" src="entry.js"></script>
+</body>
+</html>
